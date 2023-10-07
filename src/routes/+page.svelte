@@ -1,57 +1,453 @@
 <script>
-  import logo from "../assets/logo.jpeg";
-  import dogeFather from "../assets/dogeFather.jpeg";
+  import logo from "../landing assets/logo-png-1.png";
+  import monkeyPic from "../landing assets/1.png";
+  import card1Pic from "../landing assets/image-18-20.png";
+  import michaelPic from "../landing assets/michael.png";
+  import uploadPic from "../landing assets/upload-2.png";
+  import creat1 from "../landing assets/create-1.png";
 </script>
 
-<div class="light">
-  <main>
-    <div class="h-full">
-      <div class="bg-[#232830] text-white">
-        <nav class="flex items-center justify-between py-8 px-8">
-          <!-- <div> -->
-          <a href="https://sentora.ai">
-            <div class="flex items-center gap-4">
-              <img src={logo} alt="Sentora Users" class="w-36" />
-              <p class="font-serif" style="font-size: 2rem;">Carnival</p>
-            </div>
-          </a>
-          <!-- </div> -->
-          <div class="flex items-center space-x-4 md:space-x-8">
-            <button
-              class="bg-none hover:bg-blue-800 border-2 border-white shadow-gray-700 shadow-2xl text-white rounded-full py-2 px-4 md:py-3 md:px-6"
-              >Login</button
-            >
-          </div>
-        </nav>
-        <section
-          class="flex flex-col lg:flex-row items-center justify-center py-16 px-8"
+<nav>
+  <div class="flex justify-between p-10">
+    <img class="csl w-32 h-28" src={logo} alt="" />
+    <button
+      style="width: 162px;
+      height: 36px;
+      background-color: #ffffff26;
+      border-radius: 21px;
+      border: 0.8px solid;
+      border-color: #ffffff14;
+      box-shadow: 0px 4px 12px #00000026;
+      text-align: center"
+    >
+      Contact Us
+    </button>
+  </div>
+</nav>
+
+<div>
+  <div class="flex justify-between">
+    <svg
+      class="mt-60"
+      width="183"
+      height="262"
+      viewBox="0 0 183 262"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g filter="url(#filter0_d_0_328)">
+        <path
+          d="M48.4378 100.608C53.3495 124.533 46.6864 132.934 22.2972 137.941C50.9546 132.057 55.6605 142.599 60.9061 161.341C56.2462 138.643 59.7427 131.532 82.0509 125.673C57.1579 128.227 52.7198 121.466 48.4378 100.608Z"
+          fill="orange"
+        />
+      </g></svg
+    >
+    <img src={monkeyPic} alt="" />
+  </div>
+
+  <div>
+    <div class="p-10">
+      <p
+        style="font-family: Montserrat, Helvetica;
+      font-weight: 500;
+      color: #ffffffb2;
+      font-size: 34px;
+      letter-spacing: 0.34px;
+      line-height: 44.2px;"
+      >
+        Buy, Sell and Trade NFTs
+      </p>
+
+      <div class="flex gap-8 mt-7 px-7 items-center">
+        <button class="message-btn" style=""> Leave Message </button>
+        <button
+          style="font-family: Montserrat, Helvetica;
+        font-weight: 600;
+        color: var(--text-body);
+        font-size: 28px;
+        letter-spacing: 0.24px;
+        line-height: 36px;"
         >
-          <div class="lg:w-1/2 md:ml-8">
-            <h1 class="text-4xl font-thin mb-4">Sentora</h1>
-            <h2 class="text-2xl font-bold mb-6">Document Your Learning</h2>
-            <p class="text-lg font-extralight mr-0 md:mr-32 mb-6">
-              Effortlessly condense long videos into short summaries. Our
-              AI-powered website saves you time by delivering concise
-              information, making understanding easier.
-            </p>
-            <a href="https://forms.gle/Zizmm31omBkK6CCbA"
-              ><button
-                class="bg-none hover:bg-blue-800 border-2 border-white shadow-gray-700 shadow-2xl text-white rounded-full py-3 px-6"
-                >Join Now</button
-              ></a
-            >
-          </div>
-          <div class="lg:w-1/2 mt-8 lg:mt-0">
-            <img src={dogeFather} alt="Sentora Users" class="w-128" />
-          </div>
-        </section>
-        <footer class="py-12 bg-[#191c21] px-auto center mx-auto text-center">
-          <p class="text-lg text-gray-200">
-            © 2023 <span class="text-blue-700 font-bold">Sentora</span>
-            <br /><span class="font-bold"> All rights reserved.</span>
-          </p>
-        </footer>
+          Go to Market
+        </button>
+        <svg
+          width="26"
+          height="19"
+          viewBox="0 0 26 19"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M25.654 8.52515L17.3812 0.685009C17.1583 0.480988 16.8597 0.368096 16.5499 0.370648C16.24 0.3732 15.9436 0.490991 15.7245 0.698652C15.5053 0.906313 15.381 1.18723 15.3784 1.48089C15.3757 1.77456 15.4948 2.05748 15.7101 2.26872L21.9655 8.19699H1.18183C0.868389 8.19699 0.567786 8.31499 0.34615 8.52503C0.124514 8.73508 0 9.01996 0 9.31701C0 9.61405 0.124514 9.89893 0.34615 10.109C0.567786 10.319 0.868389 10.437 1.18183 10.437H21.9655L15.7101 16.3653C15.5972 16.4686 15.5072 16.5922 15.4452 16.7288C15.3833 16.8655 15.3507 17.0125 15.3493 17.1612C15.3479 17.3099 15.3778 17.4574 15.4373 17.595C15.4967 17.7327 15.5844 17.8577 15.6954 17.9629C15.8064 18.068 15.9383 18.1512 16.0836 18.2075C16.2288 18.2638 16.3844 18.2922 16.5414 18.2909C16.6983 18.2896 16.8534 18.2587 16.9976 18.2C17.1417 18.1413 17.2721 18.056 17.3812 17.949L25.654 10.1089C25.8755 9.89883 26 9.61399 26 9.31701C26 9.02002 25.8755 8.73519 25.654 8.52515V8.52515Z"
+            fill="white"
+          />
+        </svg>
       </div>
     </div>
-  </main>
+
+    <p class="p-10 heading-text" style="">Trending NFTs this week</p>
+    <div
+      class="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4"
+    >
+      <div
+        style="width: 357px;
+        height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;"
+      >
+        <img src={card1Pic} alt="" />
+
+        <div class="flex justify-between mt-3">
+          <p class="text-wrapper-37">11h : 03m : 01s</p>
+          <div class="flex gap-3">
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.96508 9.19732C6.96508 11.3963 8.76515 13.1854 10.9876 13.1854C13.1999 13.1854 15 11.3963 15 9.19732C15 6.98837 13.1999 5.19921 10.9876 5.19921C8.76515 5.19921 6.96508 6.98837 6.96508 9.19732ZM16.9006 3.06017C18.6605 4.41953 20.1588 6.40859 21.2348 8.89741C21.3153 9.08732 21.3153 9.30722 21.2348 9.48713C19.0828 14.4648 15.2514 17.4434 10.9876 17.4434H10.9775C6.72372 17.4434 2.8923 14.4648 0.740269 9.48713C0.659819 9.30722 0.659819 9.08732 0.740269 8.89741C2.8923 3.91977 6.72372 0.951172 10.9775 0.951172H10.9876C13.1195 0.951172 15.1408 1.69082 16.9006 3.06017ZM10.9888 11.6838C12.3665 11.6838 13.4928 10.5644 13.4928 9.19502C13.4928 7.81567 12.3665 6.6962 10.9888 6.6962C10.8681 6.6962 10.7474 6.70619 10.6368 6.72619C10.5966 7.82566 9.6915 8.70525 8.57526 8.70525H8.52498C8.49481 8.86517 8.4747 9.0251 8.4747 9.19502C8.4747 10.5644 9.60099 11.6838 10.9888 11.6838Z"
+                fill="white"
+                fill-opacity="0.86"
+              />
+            </svg>
+            <p
+              style="font-family: Montserrat, Helvetica;
+            font-weight: 500;
+            color: #ffffffdb;
+            font-size: 16.5px;
+            letter-spacing: 0.16px;
+            line-height: 21.4px;
+            white-space: nowrap;"
+            >
+              500
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="mt-2 flex justify-between">
+          <div>
+            <p class="card-title">Cool Guy 11</p>
+            <p class="xrp-text">32.97 XRP</p>
+          </div>
+          <div>
+            <button class="card-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="width: 357px;
+        height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;"
+      >
+        <img src={card1Pic} alt="" />
+
+        <div class="flex justify-between mt-3">
+          <p class="text-wrapper-37">11h : 03m : 01s</p>
+          <div class="flex gap-3">
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.96508 9.19732C6.96508 11.3963 8.76515 13.1854 10.9876 13.1854C13.1999 13.1854 15 11.3963 15 9.19732C15 6.98837 13.1999 5.19921 10.9876 5.19921C8.76515 5.19921 6.96508 6.98837 6.96508 9.19732ZM16.9006 3.06017C18.6605 4.41953 20.1588 6.40859 21.2348 8.89741C21.3153 9.08732 21.3153 9.30722 21.2348 9.48713C19.0828 14.4648 15.2514 17.4434 10.9876 17.4434H10.9775C6.72372 17.4434 2.8923 14.4648 0.740269 9.48713C0.659819 9.30722 0.659819 9.08732 0.740269 8.89741C2.8923 3.91977 6.72372 0.951172 10.9775 0.951172H10.9876C13.1195 0.951172 15.1408 1.69082 16.9006 3.06017ZM10.9888 11.6838C12.3665 11.6838 13.4928 10.5644 13.4928 9.19502C13.4928 7.81567 12.3665 6.6962 10.9888 6.6962C10.8681 6.6962 10.7474 6.70619 10.6368 6.72619C10.5966 7.82566 9.6915 8.70525 8.57526 8.70525H8.52498C8.49481 8.86517 8.4747 9.0251 8.4747 9.19502C8.4747 10.5644 9.60099 11.6838 10.9888 11.6838Z"
+                fill="white"
+                fill-opacity="0.86"
+              />
+            </svg>
+            <p
+              style="font-family: Montserrat, Helvetica;
+            font-weight: 500;
+            color: #ffffffdb;
+            font-size: 16.5px;
+            letter-spacing: 0.16px;
+            line-height: 21.4px;
+            white-space: nowrap;"
+            >
+              500
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="mt-2 flex justify-between">
+          <div>
+            <p class="card-title">Cool Guy 11</p>
+            <p class="xrp-text">32.97 XRP</p>
+          </div>
+          <div>
+            <button class="card-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div
+        style="width: 357px;
+        height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;"
+      >
+        <img src={card1Pic} alt="" />
+
+        <div class="flex justify-between mt-3">
+          <p class="text-wrapper-37">11h : 03m : 01s</p>
+          <div class="flex gap-3">
+            <svg
+              width="22"
+              height="18"
+              viewBox="0 0 22 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.96508 9.19732C6.96508 11.3963 8.76515 13.1854 10.9876 13.1854C13.1999 13.1854 15 11.3963 15 9.19732C15 6.98837 13.1999 5.19921 10.9876 5.19921C8.76515 5.19921 6.96508 6.98837 6.96508 9.19732ZM16.9006 3.06017C18.6605 4.41953 20.1588 6.40859 21.2348 8.89741C21.3153 9.08732 21.3153 9.30722 21.2348 9.48713C19.0828 14.4648 15.2514 17.4434 10.9876 17.4434H10.9775C6.72372 17.4434 2.8923 14.4648 0.740269 9.48713C0.659819 9.30722 0.659819 9.08732 0.740269 8.89741C2.8923 3.91977 6.72372 0.951172 10.9775 0.951172H10.9876C13.1195 0.951172 15.1408 1.69082 16.9006 3.06017ZM10.9888 11.6838C12.3665 11.6838 13.4928 10.5644 13.4928 9.19502C13.4928 7.81567 12.3665 6.6962 10.9888 6.6962C10.8681 6.6962 10.7474 6.70619 10.6368 6.72619C10.5966 7.82566 9.6915 8.70525 8.57526 8.70525H8.52498C8.49481 8.86517 8.4747 9.0251 8.4747 9.19502C8.4747 10.5644 9.60099 11.6838 10.9888 11.6838Z"
+                fill="white"
+                fill-opacity="0.86"
+              />
+            </svg>
+            <p
+              style="font-family: Montserrat, Helvetica;
+            font-weight: 500;
+            color: #ffffffdb;
+            font-size: 16.5px;
+            letter-spacing: 0.16px;
+            line-height: 21.4px;
+            white-space: nowrap;"
+            >
+              500
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="mt-2 flex justify-between">
+          <div>
+            <p class="card-title">Cool Guy 11</p>
+            <p class="xrp-text">32.97 XRP</p>
+          </div>
+          <div>
+            <button class="card-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-between max-md:flex-col max-lg:flex-col">
+      <img
+        style="width: 546px;
+        height: 571px;"
+        src={michaelPic}
+        alt=""
+      />
+      <div class="mt-10 px-10">
+        <p
+          style="width: 572px;
+          font-family: Roboto, Helvetica;
+          font-weight: 400;
+          color: #ffffff;
+          font-size: 60px;
+          letter-spacing: 0.6px;
+          line-height: 84px;
+          "
+        >
+          Modern Concepts and Clean
+        </p>
+        <svg
+          width="230"
+          height="33"
+          viewBox="0 0 230 33"
+          fill="#E75480"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 31C61.5214 11.3669 176.274 -11.5635 228 11.9962"
+            stroke="url(#paint0_linear_0_85)"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+        </svg>
+        <p class="details-blur-text">
+          We strive to provide a secure, trusted, and accessible platform that
+          makes it easy for anyone to get involved in the world of NFTs.
+        </p>
+        <button class="message-btn mt-6">Leave Message</button>
+      </div>
+    </div>
+    <div class="flex max-md:flex-col">
+      <div class="p-10 flex flex-col gap-5">
+        <p class="heading-text">Create And Sell Your NFTs</p>
+        <svg
+          width="230"
+          height="33"
+          viewBox="0 0 230 33"
+          fill="#E75480"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 31C61.5214 11.3669 176.274 -11.5635 228 11.9962"
+            stroke="url(#paint0_linear_0_85)"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+        </svg>
+        <p class="details-blur-text">
+          We are excited to offer a new perspective in digital ownership and
+          bringing it to the masses
+        </p>
+        <section class="flex gap-10">
+          <button class="message-btn">Crate New</button>
+          <button
+            style="width: 203px;
+          height: 58px;
+          border-radius: 46px;
+          border: 1px solid;
+          border-color: #d5f70a;">Watch Video</button
+          >
+        </section>
+      </div>
+      <div>
+        <img
+          src={creat1}
+          style="width: 500px;
+        height: 500px;"
+          alt=""
+        />
+        <img
+          src={uploadPic}
+          style="width: 500px;
+          height: 500px;"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="p-10 flex flex-col gap-16">
+      <div class="flex justify-between max-md:flex-col">
+        <p class="heading-text">Join the community</p>
+        <p class="details-blur-text">
+          We have a blog related to NFT so we can share thoughts and routines on
+          our blog which is updated weekly.
+        </p>
+      </div>
+      <div class="flex gap-10 items-center">
+        <input
+          class="p-6"
+          placeholder="Enter e-mail to join"
+          style="width: 40%;
+          height: 94px;
+          background-color: #1b1b21;
+          border-radius: 60px;
+          border: 1px solid;
+          border-color: #863264;"
+          type="text"
+        />
+        <button class="message-btn">Subscribe</button>
+      </div>
+    </div>
+  </div>
 </div>
+
+<style>
+  .text-wrapper-37 {
+    font-family: "Montserrat", Helvetica;
+    font-weight: 500;
+    color: #ffffffdb;
+    font-size: 16.5px;
+    letter-spacing: 0.16px;
+    line-height: 21.4px;
+    white-space: nowrap;
+  }
+  .card-title {
+    font-family: Montserrat, Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 19.2px;
+    letter-spacing: 0.19px;
+    line-height: 25px;
+    white-space: nowrap;
+  }
+  .xrp-text {
+    background: linear-gradient(
+      180deg,
+      rgb(255, 0, 91.8) 0%,
+      rgb(254.56, 2.38, 90.47) 61.46%,
+      rgb(254.56, 2.38, 90.47) 73.44%,
+      rgb(254.56, 2.38, 90.47) 84.38%,
+      rgb(234, 114, 28) 100%
+    );
+    -webkit-background-clip: text !important;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+    font-family: Montserrat, Helvetica;
+    font-weight: 500;
+    color: transparent;
+    font-size: 27.5px;
+    letter-spacing: 0.27px;
+    line-height: 35.7px;
+    white-space: nowrap;
+  }
+  .card-btn {
+    width: 150px;
+    height: 58px;
+    border-radius: 40px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 0.22px;
+    line-height: 28.6px;
+    white-space: nowrap;
+    background: linear-gradient(
+      180deg,
+      rgb(255, 0, 91.8) 0%,
+      rgb(254.56, 2.38, 90.47) 61.46%,
+      rgb(254.56, 2.38, 90.47) 73.44%,
+      rgb(254.56, 2.38, 90.47) 84.38%,
+      rgb(234, 114, 28) 100%
+    );
+  }
+  .message-btn {
+    border-radius: 48px;
+    background: linear-gradient(
+      180deg,
+      rgb(193.37, 0, 104.42) 0%,
+      rgb(194.64, 3.56, 102.03) 80.73%,
+      rgb(234, 114, 28) 100%
+    );
+    width: 225px;
+    height: 47px;
+    font-family: Montserrat, Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0.24px;
+    line-height: 36px;
+    white-space: nowrap;
+  }
+  .heading-text {
+    font-family: Roboto, Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 60px;
+    letter-spacing: 0.6px;
+    line-height: 80.1px;
+  }
+  .details-blur-text {
+    width: 532px;
+    font-family: Montserrat, Helvetica;
+    font-weight: 500;
+    color: rgb(189 189 189);
+    font-size: 26px;
+    letter-spacing: 0.26px;
+    line-height: 36.4px;
+  }
+</style>
