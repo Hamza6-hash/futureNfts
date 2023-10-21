@@ -5,23 +5,13 @@
   import michaelPic from "../landing assets/michael.png";
   import uploadPic from "../landing assets/upload-2.png";
   import creat1 from "../landing assets/create-1.png";
+  import "./style.css";
 </script>
 
 <nav>
   <div class="flex justify-between p-10">
-    <img class="csl w-32 h-28" src={logo} alt="" />
-    <button
-      style="width: 162px;
-      height: 36px;
-      background-color: #ffffff26;
-      border-radius: 21px;
-      border: 0.8px solid;
-      border-color: #ffffff14;
-      box-shadow: 0px 4px 12px #00000026;
-      text-align: center"
-    >
-      Contact Us
-    </button>
+    <img class="w-32 h-28" src={logo} alt="" />
+    <button class="contact-btn"> Contact Us </button>
   </div>
 </nav>
 
@@ -47,29 +37,11 @@
 
   <div>
     <div class="p-10">
-      <p
-        style="font-family: Montserrat, Helvetica;
-      font-weight: 500;
-      color: #ffffffb2;
-      font-size: 34px;
-      letter-spacing: 0.34px;
-      line-height: 44.2px;"
-      >
-        Buy, Sell and Trade NFTs
-      </p>
+      <p class="buySell-txt">Buy, Sell and Trade NFTs</p>
 
       <div class="flex gap-8 mt-7 px-7 items-center">
         <button class="message-btn" style=""> Leave Message </button>
-        <button
-          style="font-family: Montserrat, Helvetica;
-        font-weight: 600;
-        color: var(--text-body);
-        font-size: 28px;
-        letter-spacing: 0.24px;
-        line-height: 36px;"
-        >
-          Go to Market
-        </button>
+        <button class="markt-btn"> Go to Market </button>
         <svg
           width="26"
           height="19"
@@ -89,12 +61,7 @@
     <div
       class="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4"
     >
-      <div
-        style="width: 357px;
-        height: 500px;
-        background-size: cover;
-        background-position: 50% 50%;"
-      >
+      <div class="cont">
         <img src={card1Pic} alt="" />
 
         <div class="flex justify-between mt-3">
@@ -115,17 +82,7 @@
                 fill-opacity="0.86"
               />
             </svg>
-            <p
-              style="font-family: Montserrat, Helvetica;
-            font-weight: 500;
-            color: #ffffffdb;
-            font-size: 16.5px;
-            letter-spacing: 0.16px;
-            line-height: 21.4px;
-            white-space: nowrap;"
-            >
-              500
-            </p>
+            <p class="txt-500">500</p>
           </div>
         </div>
         <hr />
@@ -140,12 +97,7 @@
         </div>
       </div>
 
-      <div
-        style="width: 357px;
-        height: 500px;
-        background-size: cover;
-        background-position: 50% 50%;"
-      >
+      <div class="cont">
         <img src={card1Pic} alt="" />
 
         <div class="flex justify-between mt-3">
@@ -166,17 +118,7 @@
                 fill-opacity="0.86"
               />
             </svg>
-            <p
-              style="font-family: Montserrat, Helvetica;
-            font-weight: 500;
-            color: #ffffffdb;
-            font-size: 16.5px;
-            letter-spacing: 0.16px;
-            line-height: 21.4px;
-            white-space: nowrap;"
-            >
-              500
-            </p>
+            <p class="txt-500">500</p>
           </div>
         </div>
         <hr />
@@ -190,12 +132,7 @@
           </div>
         </div>
       </div>
-      <div
-        style="width: 357px;
-        height: 500px;
-        background-size: cover;
-        background-position: 50% 50%;"
-      >
+      <div class="cont">
         <img src={card1Pic} alt="" />
 
         <div class="flex justify-between mt-3">
@@ -216,17 +153,7 @@
                 fill-opacity="0.86"
               />
             </svg>
-            <p
-              style="font-family: Montserrat, Helvetica;
-            font-weight: 500;
-            color: #ffffffdb;
-            font-size: 16.5px;
-            letter-spacing: 0.16px;
-            line-height: 21.4px;
-            white-space: nowrap;"
-            >
-              500
-            </p>
+            <p class="txt-500">500</p>
           </div>
         </div>
         <hr />
@@ -249,18 +176,7 @@
         alt=""
       />
       <div class="mt-10 px-10">
-        <p
-          style="width: 572px;
-          font-family: Roboto, Helvetica;
-          font-weight: 400;
-          color: #ffffff;
-          font-size: 60px;
-          letter-spacing: 0.6px;
-          line-height: 84px;
-          "
-        >
-          Modern Concepts and Clean
-        </p>
+        <p class="details-txt">Modern Concepts and Clean</p>
         <svg
           width="230"
           height="33"
@@ -305,28 +221,12 @@
         </p>
         <section class="flex gap-10">
           <button class="message-btn">Crate New</button>
-          <button
-            style="width: 203px;
-          height: 58px;
-          border-radius: 46px;
-          border: 1px solid;
-          border-color: #d5f70a;">Watch Video</button
-          >
+          <button class="wth-btn">Watch Video</button>
         </section>
       </div>
       <div>
-        <img
-          src={creat1}
-          style="width: 500px;
-        height: 500px;"
-          alt=""
-        />
-        <img
-          src={uploadPic}
-          style="width: 500px;
-          height: 500px;"
-          alt=""
-        />
+        <img src={creat1} class="creat1-img" style="" alt="" />
+        <img class="update1-img" src={uploadPic} alt="" />
       </div>
     </div>
     <div class="p-10 flex flex-col gap-16">
@@ -339,14 +239,8 @@
       </div>
       <div class="flex gap-10 items-center">
         <input
-          class="p-6"
+          class="p-6 input-emil"
           placeholder="Enter e-mail to join"
-          style="width: 40%;
-          height: 94px;
-          background-color: #1b1b21;
-          border-radius: 60px;
-          border: 1px solid;
-          border-color: #863264;"
           type="text"
         />
         <button class="message-btn">Subscribe</button>
@@ -354,100 +248,3 @@
     </div>
   </div>
 </div>
-
-<style>
-  .text-wrapper-37 {
-    font-family: "Montserrat", Helvetica;
-    font-weight: 500;
-    color: #ffffffdb;
-    font-size: 16.5px;
-    letter-spacing: 0.16px;
-    line-height: 21.4px;
-    white-space: nowrap;
-  }
-  .card-title {
-    font-family: Montserrat, Helvetica;
-    font-weight: 500;
-    color: #ffffff;
-    font-size: 19.2px;
-    letter-spacing: 0.19px;
-    line-height: 25px;
-    white-space: nowrap;
-  }
-  .xrp-text {
-    background: linear-gradient(
-      180deg,
-      rgb(255, 0, 91.8) 0%,
-      rgb(254.56, 2.38, 90.47) 61.46%,
-      rgb(254.56, 2.38, 90.47) 73.44%,
-      rgb(254.56, 2.38, 90.47) 84.38%,
-      rgb(234, 114, 28) 100%
-    );
-    -webkit-background-clip: text !important;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* text-fill-color: transparent; */
-    font-family: Montserrat, Helvetica;
-    font-weight: 500;
-    color: transparent;
-    font-size: 27.5px;
-    letter-spacing: 0.27px;
-    line-height: 35.7px;
-    white-space: nowrap;
-  }
-  .card-btn {
-    width: 150px;
-    height: 58px;
-    border-radius: 40px;
-    font-family: "Montserrat", Helvetica;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 22px;
-    letter-spacing: 0.22px;
-    line-height: 28.6px;
-    white-space: nowrap;
-    background: linear-gradient(
-      180deg,
-      rgb(255, 0, 91.8) 0%,
-      rgb(254.56, 2.38, 90.47) 61.46%,
-      rgb(254.56, 2.38, 90.47) 73.44%,
-      rgb(254.56, 2.38, 90.47) 84.38%,
-      rgb(234, 114, 28) 100%
-    );
-  }
-  .message-btn {
-    border-radius: 48px;
-    background: linear-gradient(
-      180deg,
-      rgb(193.37, 0, 104.42) 0%,
-      rgb(194.64, 3.56, 102.03) 80.73%,
-      rgb(234, 114, 28) 100%
-    );
-    width: 225px;
-    height: 47px;
-    font-family: Montserrat, Helvetica;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 24px;
-    letter-spacing: 0.24px;
-    line-height: 36px;
-    white-space: nowrap;
-  }
-  .heading-text {
-    font-family: Roboto, Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 60px;
-    letter-spacing: 0.6px;
-    line-height: 80.1px;
-  }
-  .details-blur-text {
-    width: 532px;
-    font-family: Montserrat, Helvetica;
-    font-weight: 500;
-    color: rgb(189 189 189);
-    font-size: 26px;
-    letter-spacing: 0.26px;
-    line-height: 36.4px;
-  }
-</style>

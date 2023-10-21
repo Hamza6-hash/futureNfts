@@ -1,23 +1,13 @@
 <script>
   import cardPic from "../../assets/cardPic.jpeg";
+  import "./style.css";
 </script>
 
 <nav class="py-4 px-6 flex justify-between items-center">
-  <div
-    class="text-white"
-    style="color: #ffffff;
-    font-size: 24px;
-    font-family: Source Sans Pro;
-    line-height: 28px"
-  >
-    Explore NFTs
-  </div>
+  <div class="text-white explore-txt">Explore NFTs</div>
   <div>
     <button class="mr-2 create-btn">Create Account</button>
-    <button
-      class="px-4 py-2 rounded-lg login-btn"
-      style=" background-color: #282828;">Log in</button
-    >
+    <button class="px-4 py-2 rounded-lg login-btn">Log in</button>
   </div>
 </nav>
 
@@ -45,17 +35,7 @@
 </div>
 
 <div class="cardCollection">
-  <p
-    class="py-10"
-    style=" color: #ffffff;
-  font-size: 36px;
-  font-family: Source Sans Pro;
-  font-weight: 700;
-  line-height: 48px;
-  text-align: center;"
-  >
-    Hot Collection of India
-  </p>
+  <p class="py-10 hot-col-text">Hot Collection of India</p>
 </div>
 
 <div class="flex justify-between">
@@ -78,208 +58,64 @@
   <div class="card px-5 py-5">
     <img src={cardPic} alt="" />
     <div class="px-2 py-2 flex flex-col justify-between">
-      <p
-        style="color: #ffffff;
-          font-size: 14px;
-          font-family: Source Sans Pro;
-          line-height: 20px;"
-      >
-        Indian Traditional Artwork
-      </p>
+      <p class="indian-art-txt">Indian Traditional Artwork</p>
       <p class="text-xl font-semibold">$99.99</p>
     </div>
   </div>
   <div class="card px-5 py-5">
     <img src={cardPic} alt="" />
     <div class="px-2 py-2 flex flex-col justify-between">
-      <p
-        style="color: #ffffff;
-          font-size: 14px;
-          font-family: Source Sans Pro;
-          line-height: 20px;"
-      >
-        Indian Traditional Artwork
-      </p>
+      <p class="indian-art-txt">Indian Traditional Artwork</p>
       <p class="text-xl font-semibold">$99.99</p>
     </div>
   </div>
   <div class="card px-5 py-5">
     <img src={cardPic} alt="" />
     <div class="px-2 py-2 flex flex-col justify-between">
-      <p
-        style="color: #ffffff;
-          font-size: 14px;
-          font-family: Source Sans Pro;
-          line-height: 20px;"
-      >
-        Indian Traditional Artwork
-      </p>
+      <p class="indian-art-txt">Indian Traditional Artwork</p>
       <p class="text-xl font-semibold">$99.99</p>
     </div>
   </div>
   <div class="card px-5 py-5">
     <img src={cardPic} alt="" />
     <div class="px-2 py-2 flex flex-col justify-between">
-      <p
-        style="color: #ffffff;
-          font-size: 14px;
-          font-family: Source Sans Pro;
-          line-height: 20px;"
-      >
-        Indian Traditional Artwork
-      </p>
+      <p class="indian-art-txt">Indian Traditional Artwork</p>
       <p class="text-xl font-semibold">$99.99</p>
     </div>
   </div>
   <div class="card px-5 py-5">
     <img src={cardPic} alt="" />
     <div class="px-2 py-2 flex flex-col justify-between">
-      <p
-        style="color: #ffffff;
-          font-size: 14px;
-          font-family: Source Sans Pro;
-          line-height: 20px;"
-      >
-        Indian Traditional Artwork
-      </p>
+      <p class="indian-art-txt">Indian Traditional Artwork</p>
       <p class="text-xl font-semibold">$99.99</p>
     </div>
   </div>
   <div class="card px-5 py-5">
     <img src={cardPic} alt="" />
     <div class="px-2 py-2 flex flex-col justify-between">
-      <p
-        style="color: #ffffff;
-          font-size: 14px;
-          font-family: Source Sans Pro;
-          line-height: 20px;"
-      >
-        Indian Traditional Artwork
-      </p>
+      <p class="indian-art-txt">Indian Traditional Artwork</p>
       <p class="text-xl font-semibold">$99.99</p>
     </div>
   </div>
   <div class="card px-5 py-5">
     <img src={cardPic} alt="" />
     <div class="px-2 py-2 flex flex-col justify-between">
-      <p
-        style="color: #ffffff;
-          font-size: 14px;
-          font-family: Source Sans Pro;
-          line-height: 20px;"
-      >
-        Indian Traditional Artwork
-      </p>
+      <p class="indian-art-txt">Indian Traditional Artwork</p>
       <p class="text-xl font-semibold">$99.99</p>
     </div>
   </div>
   <div class="card px-5 py-5">
     <img src={cardPic} alt="" />
     <div class="px-2 py-2 flex flex-col justify-between">
-      <p
-        style="color: #ffffff;
-          font-size: 14px;
-          font-family: Source Sans Pro;
-          line-height: 20px;"
-      >
-        Indian Traditional Artwork
-      </p>
+      <p class="indian-art-txt">Indian Traditional Artwork</p>
       <p class="text-xl font-semibold">$99.99</p>
     </div>
   </div>
 </div>
 
 <center>
-  <button
-    style=" width: 150px;
-  height: 40px;
-  padding: 0px 8px;
-  border: 0;
-  box-sizing: border-box;
-  border-radius: 24px;
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 14px;
-  font-family: Source Sans Pro;
-  font-weight: 500;
-  line-height: 16px;
-  outline: none;">Learn More</button
-  >
+  <button class="learn-btn">Learn More</button>
 </center>
 
-<style>
-  nav .login-btn {
-    width: 104px;
-    height: 36px;
-    padding: 0px 8px;
-    border: 0;
-    box-sizing: border-box;
-    border-radius: 24px;
-    background-color: #282828;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: "Source Sans Pro";
-    font-weight: 500;
-    line-height: 16px;
-    outline: none;
-  }
-  nav .create-btn,
-  div .sell-nfts {
-    width: 112px;
-    height: 36px;
-    border: 0;
-    box-sizing: border-box;
-    border-radius: 24px;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: "Source Sans Pro";
-    font-weight: 500;
-    line-height: 16px;
-    outline: none;
-  }
-  .wearText {
-    color: #ffffff;
-    font-size: 14px;
-    font-family: "Source Sans Pro";
-    font-weight: 500;
-    line-height: 20px;
-  }
-  .cardCollection {
-    width: 100%;
-    height: 144px;
-    background-color: rgba(40, 40, 40, 0.8);
-    border-radius: 24px;
-  }
-  .btn button {
-    width: 80px;
-    height: 36px;
-    padding: 0px 8px;
-    border-radius: 24px;
-    background-color: #373737;
-    color: #bdbdbd;
-    font-size: 14px;
-    font-family: "Source Sans Pro";
-    font-weight: 500;
-    line-height: 16px;
-    outline: none;
-  }
-  .card img {
-    width: 17em;
-    height: 21em;
-    border-radius: 24px;
-    /* background-image: url(./image.jpeg); */
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  /* .switch {
-    top: 479px;
-    left: 1220px;
-    width: 38px;
-    height: 20px;
-    border-radius: 40px;
-    color: #161616;
-    background-color: #282828;
-  } */
-</style>
+<!-- <style>
+</style> -->

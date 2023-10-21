@@ -2,24 +2,14 @@
   import productImg from "../../assets/productImg.jpeg";
   import otherProdImg from "../../assets/otherProductImg.png";
   import profileImg from "../../assets/profileImg.png";
+  import "./style.css";
 </script>
 
 <nav class="py-4 px-6 flex justify-between items-center">
-  <div
-    class="text-white"
-    style="color: #ffffff;
-      font-size: 24px;
-      font-family: Source Sans Pro;
-      line-height: 28px"
-  >
-    Shop By
-  </div>
+  <div class="text-white shop-txt">Shop By</div>
   <div>
     <button class="mr-2 create-btn">Create Account</button>
-    <button
-      class="px-4 py-2 rounded-lg login-btn"
-      style=" background-color: #282828;">Log in</button
-    >
+    <button class="px-4 py-2 rounded-lg login-btn">Log in</button>
   </div>
 </nav>
 
@@ -48,81 +38,23 @@
 
 <div class="flex gap-2 max-sm:flex-col max-md:flex-col p-3">
   <div class="p-3 flex flex-col gap-4 max-sm:flex-row max-md:flex-row">
-    <img
-      style="width: 148px;
-    height: 164px;
-    border-radius: 24px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;"
-      src={otherProdImg}
-      alt=""
-    />
-    <img
-      style="width: 148px;
-    height: 164px;
-    border-radius: 24px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;"
-      src={otherProdImg}
-      alt=""
-    />
-    <img
-      style="width: 148px;
-    height: 164px;
-    border-radius: 24px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;"
-      src={otherProdImg}
-      alt=""
-    />
+    <img class="product-img" src={otherProdImg} alt="" />
+    <img class="product-img" src={otherProdImg} alt="" />
+    <img class="product-img" src={otherProdImg} alt="" />
   </div>
   <div class="p-2">
-    <img
-      style="width: 466px;
-    height: 524px;
-    border-radius: 24px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;"
-      src={productImg}
-      alt=""
-    />
+    <img class="actual-product-img" src={productImg} alt="" />
   </div>
 
   <div class="flex flex-col">
     <div class="flex gap-7 justify-center">
-      <p
-        style=" color: #ffffff;
-    font-size: 32px;
-    font-family: Source Sans Pro;
-    font-weight: 700;
-    line-height: 42px;"
-      >
-        Colorful Dress
-      </p>
-      <p
-        class="py-1"
-        style="color: #ffffff;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 31px;
-    "
-      >
-        Buy Now
-      </p>
+      <p class="colorful-txt">Colorful Dress</p>
+      <p class="py-1 buy-txt">Buy Now</p>
     </div>
     <div class="flex gap-3 mt-2">
       <img class="rounded-full w-10 h-10" src={profileImg} alt="" />
       <div>
-        <div
-          style=" color: #ffffff;
-        font-size: 14px;
-        font-family: Source Sans Pro;
-        line-height: 20px;"
-        >
+        <div class="details-txt">
           <p>Artist: Silly Petit</p>
           <p>Location: London, UK</p>
         </div>
@@ -146,13 +78,7 @@
         </div>
       </div>
     </div>
-    <div
-      class="mt-14 flex flex-col gap-10"
-      style=" color: #ffffff;
-    font-size: 16px;
-    font-family: Source Sans Pro;
-    line-height: 22px;"
-    >
+    <div class="mt-14 flex flex-col gap-10 sixteen-twentyTwo-txt">
       <p>Basic white-T shirt for sale. Brand new with tags.</p>
       <div>
         <p>Size: M</p>
@@ -160,18 +86,7 @@
         <p>Brand: Thrifted</p>
       </div>
       <div class="flex items-center gap-6">
-        <button
-          style="width: 292px;
-      height: 48px;
-      padding: 0px 8px;
-      border-radius: 24px;
-      background-color: #282828;
-      color: #ffffff;
-      font-size: 18px;
-      font-family: Source Sans Pro;
-      font-weight: 500;
-      line-height: 24px;">Add to Cart</button
-        >
+        <button class="addCart-btn">Add to Cart</button>
         <svg
           class="hover:cursor-pointer"
           xmlns="http://www.w3.org/2000/svg"
@@ -185,43 +100,3 @@
     </div>
   </div>
 </div>
-
-<style>
-  nav .login-btn {
-    width: 104px;
-    height: 36px;
-    padding: 0px 8px;
-    border: 0;
-    box-sizing: border-box;
-    border-radius: 24px;
-    background-color: #282828;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: "Source Sans Pro";
-    font-weight: 500;
-    line-height: 16px;
-    outline: none;
-  }
-  nav .create-btn,
-  div .sell-nfts {
-    width: 112px;
-    height: 36px;
-    border: 0;
-    box-sizing: border-box;
-    border-radius: 24px;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: "Source Sans Pro";
-    font-weight: 500;
-    line-height: 16px;
-    outline: none;
-  }
-  .wearText {
-    color: #ffffff;
-    font-size: 14px;
-    font-family: "Source Sans Pro";
-    font-weight: 500;
-    line-height: 20px;
-  }
-</style>

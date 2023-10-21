@@ -1,0 +1,90 @@
+.checkout-container {
+  width: 600px;
+  height: auto;
+  background-color: #161616;
+  border-radius: 24px;
+  border: 1px solid #282828;
+}
+
+.checkout-txt {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Source Sans Pro;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: right;
+}
+
+.checkout-imgs {
+  width: 120px;
+  height: 120px;
+  border-radius: 24px;
+}
+
+.check-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  color: #161616;
+  background-color: #282828;
+}
+
+.checkout-btn {
+  width: 504px;
+  height: 48px;
+  padding: 0px 8px;
+  border-radius: 24px;
+  background-color: #282828;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Source Sans Pro;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.textContainer {
+  max-width: 110px;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}
+
+.boldText {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.textItem {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.priceText {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  line-height: 22px;
+  position: relative;
+  left: 233px;
+  top: 60px;
+}
+
+.totalText {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* @media screen and (max-width: 600px) {
+  .mediaSmall {
+    width: 100px;
+  }
+} */

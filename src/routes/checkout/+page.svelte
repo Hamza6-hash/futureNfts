@@ -1,26 +1,13 @@
 <script>
   import checkProImg from "../../assets/checkProImg.png";
   import checkAssetImg from "../../assets/checkAssetImg.png";
+  import "./style.css";
 </script>
 
 <nav class="py-8 px-20 flex justify-between items-center max-sm:px-3">
-  <div
-    class="text-white"
-    style="color: #ffffff;
-    font-size: 40px;
-    font-family: Source Sans Pro;
-    font-weight: 800;
-    line-height: 52px;"
-  >
-    Select NFTs
-  </div>
+  <div class="text-white nft-txt">Select NFTs</div>
   <div>
-    <img
-      src={checkProImg}
-      alt=""
-      class="w-10 h-10 rounded-full"
-      style=" background-color: #282828;"
-    />
+    <img src={checkProImg} alt="" class="w-10 h-10 rounded-full profile-img" />
   </div>
 </nav>
 
@@ -30,34 +17,11 @@
 
 <div class="px-48 flex flex-col gap-7 max-sm:p-3">
   <div>
-    <p
-      style="color: #ffffff;
-      font-size: 48px;
-      font-family: Source Sans Pro;
-      font-weight: 700;
-      line-height: 72px;"
-    >
-      Checkout
-    </p>
-    <p
-      style="color: #ffffff;
-      font-size: 24px;
-      font-family: Source Sans Pro;
-      line-height: 36px;"
-    >
-      Artwork Details
-    </p>
+    <p class="check-txt" style="">Checkout</p>
+    <p class="art-txt">Artwork Details</p>
   </div>
   <div>
-    <p
-      style="color: #ffffff;
-      font-size: 24px;
-      font-family: Source Sans Pro;
-      font-weight: 700;
-      line-height: 36px;"
-    >
-      Delivery Method
-    </p>
+    <p class="delivery-txt">Delivery Method</p>
     <hr class="bg-gray-200 border-none" style="height: 0.1px;" />
   </div>
   <div class="flex items-center gap-5">
@@ -71,23 +35,8 @@
       />
     </svg>
     <div class="mt-2">
-      <p
-        style="color: #ffffff;
-          font-size: 16px;
-          font-family: Source Sans Pro;
-          font-weight: 700;
-          line-height: 22px;"
-      >
-        Choose a delivery method
-      </p>
-      <p
-        style="color: #ffffff;
-          font-size: 16px;
-          font-family: Source Sans Pro;
-          line-height: 24px;"
-      >
-        Enter your shipping address
-      </p>
+      <p class="chose-txt" style="">Choose a delivery method</p>
+      <p class="enter-txt">Enter your shipping address</p>
     </div>
     <svg
       class="cls absolute right-48 max-sm:right-10 hover:cursor-pointer"
@@ -102,99 +51,28 @@
   <hr class="bg-gray-200 border-none" style="height: 0.1px;" />
   <div class="flex items-center gap-5">
     <div class="mt-2">
-      <p
-        style="color: #ffffff;
-          font-size: 16px;
-          font-family: Source Sans Pro;
-          font-weight: 700;
-          line-height: 22px;"
-      >
-        Choose a delivery method
-      </p>
-      <p
-        style="color: #ffffff;
-          font-size: 16px;
-          font-family: Source Sans Pro;
-          line-height: 24px;"
-      >
-        Specially delivery instruction
-      </p>
+      <p class="meth-txt">Choose a delivery method</p>
+      <p class="enter-txt">Specially delivery instruction</p>
     </div>
     <div class="relative hover:cursor-pointer">
-      <div
-        style="top: 1004px;
-               left: 818px;
-               width: 46px;
-               height: 24px;
-               border-radius: 40px;
-               color: #161616;
-               background-color: #282828;"
-      />
+      <div class="nfts-container" />
 
       <div class="absolute top-0 w-6 h-6 rounded-full bg-gray-700" />
     </div>
   </div>
   <div class="mt-5">
-    <p
-      style=" color: #ffffff;
-    font-size: 24px;
-    font-family: Source Sans Pro;
-    font-weight: 700;
-    line-height: 36px;"
-    >
-      Selected NFTs
-    </p>
+    <p class="delivery-txt">Selected NFTs</p>
     <hr class="bg-gray-200 border-none" style="height: 0.1px;" />
     <div class="flex gap-48 py-6">
       <div class="flex flex-col">
-        <p
-          style=" color: #ffffff;
-      font-size: 24px;
-      font-family: Source Sans Pro;
-      font-weight: 700;
-      line-height: 36px;"
-        >
-          Artwork Name
-        </p>
-        <p
-          style=" color: #ffffff;
-      font-size: 16px;
-      font-family: Source Sans Pro;
-      line-height: 22px;"
-        >
-          Artwork Description
-        </p>
+        <p class="delivery-txt">Artwork Name</p>
+        <p class="chose-txt">Artwork Description</p>
       </div>
-      <img
-        style="width: 322px;
-        height: 170px;
-        border-radius: 24px;
-        background-size: cover;"
-        src={checkAssetImg}
-        alt=""
-      />
+      <img class="checkout-img" src={checkAssetImg} alt="" />
     </div>
     <div class="flex gap-16">
-      <p
-        style="color: #ffffff;
-      font-size: 24px;
-      font-family: Source Sans Pro;
-      font-weight: 700;
-      line-height: 36px;"
-      >
-        Price
-      </p>
-      <button
-        style=" width: 100px;
-      height: 39px;
-      padding: 0px 8px;
-      border-radius: 24px;
-      background-color: #282828;
-      color: #ffffff;
-      font-size: 16px;
-      font-family: Source Sans Pro;
-      line-height: 22px;">Add</button
-      >
+      <p class="delivery-txt">Price</p>
+      <button class="add-btn">Add</button>
     </div>
   </div>
   <hr class="bg-gray-200 border-none" style="height: 0.1px;" />
@@ -208,28 +86,12 @@
         d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
       /></svg
     >
-    <p
-      style=" color: #ffffff;
-        font-size: 16px;
-        font-family: Source Sans Pro;
-        line-height: 22px;"
-    >
-      Add more nfts
-    </p>
+    <p class="meth-txt">Add more nfts</p>
   </div>
 
   <hr class="bg-gray-200 border-none" style="height: 0.1px;" />
 
-  <p
-    class="mt-10"
-    style=" color: #ffffff;
-    font-size: 24px;
-    font-family: Source Sans Pro;
-    font-weight: 700;
-    line-height: 36px;"
-  >
-    Payment Details
-  </p>
+  <p class="mt-10 delivery-txt">Payment Details</p>
   <hr class="bg-gray-200 border-none" style="height: 0.1px;" />
   <div class="mt-2 flex items-center gap-6">
     <svg
@@ -242,21 +104,8 @@
       /></svg
     >
     <div>
-      <p
-        style="color: #ffffff;
-        font-size: 16px;
-        font-family: Source Sans Pro;
-        font-weight: 700;
-        line-height: 22px;"
-      >
-        Choose a delivery method
-      </p>
-      <p
-        style="color: #ffffff;
-        font-size: 16px;
-        font-family: Source Sans Pro;
-        line-height: 24px;"
-      >
+      <p class="chose-txt">Choose a delivery method</p>
+      <p class="enter-txt">
         Please add your Payment method to complete your order
       </p>
     </div>
@@ -273,76 +122,24 @@
       /></svg
     >
     <div>
-      <p
-        style="color: #ffffff;
-        font-size: 16px;
-        font-family: Source Sans Pro;
-        font-weight: 700;
-        line-height: 22px;"
-      >
-        Tip the artist
-      </p>
-      <p
-        style="color: #ffffff;
-        font-size: 16px;
-        font-family: Source Sans Pro;
-        line-height: 24px;"
-      >
-        Optional tip for the artist
-      </p>
+      <p class="chose-txt">Tip the artist</p>
+      <p class="enter-txt">Optional tip for the artist</p>
     </div>
   </div>
   <hr class="bg-gray-200 border-none" style="height: 0.1px;" />
-  <div
-    style="width: 384px;
-    height: 334px;
-    background-color: #282828;
-    border-radius: 24px;"
-  >
-    <p
-      class="m-10"
-      style="color: #ffffff;
-      font-size: 24px;
-      font-family: Source Sans Pro;
-      font-weight: 700;
-      line-height: 36px;"
-    >
-      Price
-    </p>
+  <div class="total-card">
+    <p class="m-10 delivery-txt">Price</p>
     <hr class="bg-gray-200 border-none" style="height: 0.06px;" />
-    <div
-      style="color: #ffffff;
-      font-size: 20px;
-      font-family: Source Sans Pro;
-      line-height: 30px;"
-      class="flex justify-between p-5"
-    >
+    <div class="flex justify-between p-5 btn-container">
       <p>Sub Total</p>
       <p>Total Price</p>
     </div>
-    <div
-      style="color: #ffffff;
-      font-size: 20px;
-      font-family: Source Sans Pro;
-      line-height: 30px;"
-      class="flex justify-between p-5"
-    >
+    <div class="flex justify-between p-5 btn-container">
       <p>Total</p>
       <p>Total</p>
     </div>
     <center>
-      <button
-        style=" width: 337px;
-        height: 62px;
-        padding: 0px 8px;
-        border-radius: 24px;
-        background-color: #000000;
-        color: #ffffff;
-        font-size: 18px;
-        font-family: Source Sans Pro;
-        font-weight: 600;
-        line-height: 28px;">Procced</button
-      >
+      <button class="proceed-btn">Procced</button>
     </center>
   </div>
 </div>
